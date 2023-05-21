@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz game</title>
+  <link rel="stylesheet" href="quiz.css">
+  <!-- <link rel="stylesheet" href="quiz1.1.css"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+  <script src="script-2.js"></script>
+</head>
+
+<body>
+  <div class="box" style="background-color: azure;">
+    <p style="color:rgb(36, 138, 18)" id="countdown">00:00</p>
+    
+    <script  src="timer.js"></script>
+    <div class="op">
+      <p style="padding: 0 30px">Q 1. The property in CSS used to change the background color of an element is - </p>
+      <br>
+
+      <button class="incorrect" id="incorrect" onclick="incorrectgotoLink(this)">A.&ensp;bgcolor</button><br><br>
+      <button class="incorrect" id="incorrect" onclick="incorrectgotoLink(this)">B.&ensp;color</button><br><br>
+      <button class="correct" id="correct" onclick="gotoLink(this)" value="quiz.css">C.&ensp;background-color</button>
+      <br><br>
+      <button class="incorrect" id="incorrect" onclick="incorrectgotoLink(this)">D.&ensp;All of the
+        above</button><br><br>
+      <button class="submit" onclick="gotoLink(this)" value="quiz2.html">NEXT</button>
+      <script>
+        function gotoLink(link) {
+          console.log(link.value);
+          location.href = 'quiz2.html';
+        };
+        // document.write("count"+c);
+        function incorrectgotoLink(link) {
+          console.log(link.value);
+          location.href = 'quiz7.html';
+        };
+
+        
+      </script>
+
+    </div>
+
+
+  </div>
+
+
+</body>
+
+</html>
