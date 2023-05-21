@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz game</title>
+    <link rel ="stylesheet" href="quiz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+<style>
+    .dis{
+        color:brown
+
+    }
+</style>
+    
+</head>
+<body>
+    <div class="box" style="background-color: azure;">
+
+        
+        <div class="op">
+            <p class="dis" style="padding: 0 30px"  > 😥OOPS! You choose the wrong answer. <br> <br>Better luck next time</p>
+            <p style="color:rgb(43, 122, 43)" > Correct Answer : background-color</p>
+       <button class="submit" onclick="gotoLink(this)" value="quiz2.html" >NEXT</button>
+        <script>
+          function gotoLink(link){
+            console.log(link.value);
+            location.href = 'quiz2.html';
+          };
+        </script>
+    </div>
+    
+    
+</div>
+
+    
+</body>
+</html>

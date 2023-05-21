@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz game</title>
+    <link rel ="stylesheet" href="quiz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+    <div class="box" style="background-color: azure;">
+      <p style="color:rgb(36, 138, 18)" id="countdown">00:00</p>
+    
+    <script  src="timer.js"></script>
+
+        <div class="op">
+        <p style="padding: 0 30px">Q 5. &ltp style = "border:2px solid red;"&gt</p><br>
+        
+        <button class="correct" id="correct" onclick="gotoLink(this)" value="quiz.css" >A.&ensp;Inline CSS</button><br><br>
+        <button class="incorrect" id="incorrect" onclick="incorrectgotoLink(this)">B.&ensp;Internal CSS</button><br><br>
+        <button class="incorrect" id="incorrect" onclick="incorrectgotoLink(this)">C.&ensp;External CSS</button><br><br>
+        <button class="incorrect"  id="incorrect" onclick="incorrectgotoLink(this)">D.&ensp;None of the above </button>   <br><br>
+        <button class="submit" onclick="gotoLink(this)" value="quiz6.html" >SUBMIT</button>
+          <script>
+            function gotoLink(link){
+              console.log(link.value);
+              location.href = 'quiz6.html';
+            };
+            function incorrectgotoLink(link){
+              console.log(link.value);
+              location.href = 'quiz11.html';
+            };
+          </script>
+    </div>
+    
+    
+</div>
+
+    
+</body>
+</html>
