@@ -1,0 +1,65 @@
+body{
+    background-color:rgb(29,26,26);
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7) ),url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.E_FZKj6Jiop67SnR0iW4LwHaE7%26pid%3DApi&f=1&ipt=e72c0f56f4d01436bb3616c317967af4d46204ad5cb5bca5a37158bde509e03b&ipo=images");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+h1
+{
+    color:transparent;
+    text-align: center;
+   -webkit-text-stroke: 1px rgb(243, 243, 245);
+   background: url(' back.png');
+   -webkit-background-clip:Text;
+   
+   animation: back 20s linear infinite;
+   opacity: 50%;
+   font-size: 100px;
+   font-family: 'Cinzel Decorative', cursive;
+   
+}
+@keyframes back{
+    100%{
+        background-position: 900px 0;
+    }
+
+}
+
+.play
+{
+    width: 155px; 
+    border: 7px solid blue;
+    background-color: blue;
+    border-radius: 10px;
+    margin: auto; 
+    margin-top: 16px;
+    padding: 0px 7px 0px 7px;
+   
+
+}
+
+a{ 
+    font-size: 50px;    
+    text-decoration: none;
+    color: black;
+    
+    font-family: 'Bruno Ace', cursive;
+}
+a:hover{
+    letter-spacing: 0.25rem;
+    box-shadow: 2px 2px 3px rgb(94, 94, 185);
+   
+}
+input[type=text] {
+    margin-top: 50px;
+    border:2px solid rgb(47, 218, 240);
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgb(226, 243, 226);
+}
+.txtbox{
+    font-size: 20px;
+}
