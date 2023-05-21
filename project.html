@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz game</title>
+    <link rel ="stylesheet" href="front.css">
+  
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    
+</head>
+<body >
+    <a href="/signin.html" id="sign">
+        <!-- <img src="https://th.bing.com/th/id/OIP.w222Q9_kL5AisZRAoYhOeQHaHa?w=179&h=180&c=7&r=0&o=5&pid=1.7"/> -->
+        Sign in
+    </a>
+    <h1> Quiz Game :)</h1>
+    <input class="txtbox" type="text" placeholder="Enter your name" id="txt"required/>&ensp;<span style="color:white;font-size:30px;">0</span><br><br>
+
+    <script src="jquery-3.7.0.min.js"></script>
+    <script>
+        $('#txt').keydown(function(){
+            $(this).css("background-color","green");
+
+        })
+        $('#txt').keyup (function(){
+            $(this).css("background-color","pink");
+
+        })
+
+        var i=0;3
+        $('#txt').keypress(function () {
+            $('span').text(i+=1);
+            
+        })
+        </script>
+
+    <div class="play">
+
+        <a href="/quiz.html" id="play">Play</a>
+
+    </div><br><br><br><br><br><br><br><br><br>
+    <p>jkjb</p>
+
+    
+    
+</body>
+</html>
